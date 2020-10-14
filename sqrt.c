@@ -30,10 +30,14 @@ int main(int argc, char* argv[]) {
 		exit(1);
 	}
 	if(input>=0){
+<<<<<<< HEAD
 		printf("Square root of %d is %f\n",input,sqrt(input));
+=======
+		printf("square root for %d is %f\n :",input,sqrt(input));
+>>>>>>> br_negativeSupport
 	}
 	}
-	
+
 	printf("End of program. Exiting.");
 	return(0);
 
