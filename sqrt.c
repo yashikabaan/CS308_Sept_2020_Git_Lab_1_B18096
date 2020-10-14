@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
 		exit(1);
 	}
 	if(input>=0){
-		printf("Sqrt of %d is %f\n",input,sqrt(input));
+		printf("Square root of %d is %f\n",input,sqrt(input));
 	}
 	}
 	
