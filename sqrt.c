@@ -15,13 +15,25 @@ int main(int argc, char* argv[]) {
 		exit(-1);
 	}
 
-	if (!isdigit(argv[1])){
-		printf("Entered input is not a number.\n");
-		exit(1);	
-	}	
-
 	int input = atoi(argv[1]);
-	printf("Sqrt of %d is %f\n",input,sqrt(input));
+	
+	if(argv[1][0]=='-'){
+		if(input<0){
+			input=input*-1;
+			printf("Sqrt of -%d is %f",input,sqrt(input));
+			printf("i\n");}
+	}
+ 
+	if(argv[1][0]!='-'){
+	if(!isdigit(input)){
+		printf("Entered input is not a number.\n");
+		exit(1);
+	}
+	if(input>=0){
+		printf("Sqrt of %d is %f\n",input,sqrt(input));
+	}
+	}
+	
 	printf("End of program. Exiting.");
 	return(0);
 
